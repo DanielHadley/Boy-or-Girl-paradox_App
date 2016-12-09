@@ -12,9 +12,9 @@ fluidPage(
   sidebarLayout(
     sidebarPanel(
       radioButtons("dist", "Simulation type:",
-                   c("Normal" = "nosamp",
-                     "Uniform" = "unif",
-                     "Log-normal" = "lnorm",
+                   c("All Families" = "nosamp",
+                     "Families with at least girl" = "onegirl",
+                     "Families where you meet a girl" = "meetgirl",
                      "Exponential" = "exp")),
       br(),
       
