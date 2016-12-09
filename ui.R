@@ -12,17 +12,15 @@ fluidPage(
   sidebarLayout(
     sidebarPanel(
       radioButtons("dist", "Simulation type:",
-                   c("All Families" = "nosamp",
-                     "Families with at least girl" = "onegirl",
-                     "Families where you meet a girl" = "meetgirl",
-                     "Exponential" = "exp")),
+                   c("All Families*" = "nosamp",
+                     "Families with at least one boy**" = "oneboy",
+                     "Families where you meet a boy***" = "meetboy")),
       br(),
       
-      sliderInput("n", 
-                  "Number of observations:", 
-                  value = 500,
-                  min = 1, 
-                  max = 1000)
+      p("* This simulates 1,000 families."),
+      p("** From all families with two children, at least one of whom is a boy, a family is chosen at random."),
+      p("*** From all families with two children, one child is selected at random, and the sex of that child is specified to be a boy.")
+      
     ),
     
     # Show a tabset that includes a plot, summary, and table view

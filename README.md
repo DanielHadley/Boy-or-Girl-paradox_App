@@ -1,1 +1,1 @@
-# Boy-or-Girl-paradox_App
+The boy-girl paradox stems from an ambiguity in the following question: "Mr. Smith has two children. At least one of them is a boy. What is the probability that both children are boys?" This app simulates 1,000 families, and lets you choose the sampling method, that is, the way we find out the gender of Mr. Smith's boy. You can see how all this is done in the code. For more information, there is an excellent [Wikipedia article](https://en.wikipedia.org/wiki/Boy_or_Girl_paradox).  
