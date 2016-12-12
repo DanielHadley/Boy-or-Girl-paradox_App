@@ -1,6 +1,7 @@
 library(shiny)
 library(dplyr)
 library(ggplot2)
+library(stringr)
 
 # Define UI for random distribution application 
 fluidPage(
@@ -31,7 +32,7 @@ fluidPage(
       tabsetPanel(type = "tabs", 
                   tabPanel("Plot", plotOutput("plot")), 
                   tabPanel("Summary", textOutput("summary")), 
-                  tabPanel("Table", tableOutput("table"))
+                  tabPanel("Data", tableOutput("table"))
       )
     )
   )
