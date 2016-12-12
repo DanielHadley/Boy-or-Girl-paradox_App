@@ -8,7 +8,7 @@ child_one <- replicate(1000, give_birth())
 child_two <- replicate(1000, give_birth())
 
 # Put the children into families
-families <- data_frame(child_one, child_two) %>% 
+families <- tibble(child_one, child_two) %>% 
   mutate(pairs = paste(child_one, child_two))
 
 
@@ -55,8 +55,8 @@ function(input, output) {
   })
   
   # Generate a summary of the data
-  output$summary <- renderPrint({
-    summary(data())
+  output$summary <- renderText({
+    "test"
   })
   
   # Generate an HTML table view of the data

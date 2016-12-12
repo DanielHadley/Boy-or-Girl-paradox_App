@@ -30,7 +30,7 @@ fluidPage(
     mainPanel(
       tabsetPanel(type = "tabs", 
                   tabPanel("Plot", plotOutput("plot")), 
-                  tabPanel("Summary", verbatimTextOutput("summary")), 
+                  tabPanel("Summary", textOutput("summary")), 
                   tabPanel("Table", tableOutput("table"))
       )
     )
