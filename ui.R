@@ -20,7 +20,7 @@ fluidPage(
                      "Families where you meet a boy***" = "meetboy")),
       br(),
       
-      p("* This simulates 1,000 families."),
+      p("* This simulates 10,000 families."),
       p("** From all families with two children, at least one of whom is a boy, a family is chosen at random."),
       p("*** From all families with two children, one child is selected at random, and the sex of that child is specified to be a boy.")
       
